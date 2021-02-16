@@ -12,7 +12,7 @@ function getRandomNumber(){
 console.log("Number: " + randomNum);
 
 
-// Initialize the Speech Rcognition Object 
+// Initialize the Speech Recognition Object 
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 // Create a new Instance called recognition 
@@ -30,7 +30,7 @@ function onSpeak(e){
     console.log(msg);
 
     writeMessage(msg);
-    // checkNumber(msg);
+    checkNumber(msg);
 }
 
 
